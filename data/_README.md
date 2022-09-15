@@ -1,1 +1,1 @@
-This will describe what is in the data folders
+This folder will contain the data that I download from different sources: url, github, and dryad

@@ -13,6 +13,13 @@ library(here)
 # install.packages("prereg")
 library(prereg)
 # tinytex::install_tinytex()
+# install.packages("ymlthis") # for manuscript template, includes "yaml"
+library(ymlthis)
+# install.packages("devtools")
+library(devtools)
+# install_github('viking/r-yaml')
+# install.packages("rticles")
+library(rticles)
 
 #### DOWNLOAD DATA ####
 

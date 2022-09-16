@@ -1,3 +1,7 @@
+# BIOL 548T - Productivity and Reproducibility in Ecology and Evolution
+
+#### DOWNLOAD DATA ####
+
 ## create directories
 dir.create("data/")
 dir.create("scripts/")
@@ -29,9 +33,11 @@ usethis::create_from_github(repo_spec = "https://github.com/kguidonimartins/beta
 system("cp -r /Users/sam/LDP/PROD_REPRO/Beta_div/betadiv-enp/data/* data/github/.")
 
 
+#### MANUSCRIPT ####
 
-
-
-
+## Install and load packages required
+# install.packages("prereg")
+library(prereg)
+# tinytex::install_tinytex()
 
 

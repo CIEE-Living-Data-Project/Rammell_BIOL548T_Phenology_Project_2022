@@ -49,8 +49,6 @@ Researchers collected data on three different plant species from 2005-2007 in th
 
 Species a did this, species b did this, and species c did this.
 
-*Figure 1*. Developmental rates of species a, b, c as a function of air temperature.
-
 # Discussion
 
 Species specific responses.
@@ -61,4 +59,8 @@ This is important for reasons.
 
 # Acknowledgements
 
-# References {#sec-references .unnumbered}
+CIEE team.
+
+# References
+
+<insert references from .bib file>

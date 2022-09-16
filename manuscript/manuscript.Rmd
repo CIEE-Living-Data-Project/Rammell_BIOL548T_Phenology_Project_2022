@@ -1,0 +1,7 @@
+---
+title: Impacts of temperature on flowering phenology of tundra plants
+author:
+  - name: Nicola F. Rammell
+    email: nicolarammell@gmail.com
+    affiliation: The University of British Columbia
+---

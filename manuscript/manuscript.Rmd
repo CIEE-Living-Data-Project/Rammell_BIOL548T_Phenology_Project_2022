@@ -36,7 +36,8 @@ header-includes:
 
 # csl: https://raw.githubusercontent.com/citation-style-language/styles/master/ecology-letters.csl
 csl: https://www.zotero.org/styles/ecology-letters
-# csl: "ecology-letters.csl"
+
+csl: "ecology-letters.csl"
 
 # The .bib file allows you to add citations without Zotero and to share your
 # library with co-authors so that everyone has the same list of potential

@@ -1,5 +1,19 @@
 # BIOL 548T - Productivity and Reproducibility in Ecology and Evolution
 
+#### INSTALL AND LOOAD PACKAGES ####
+
+# install.packages("groundhog")
+library(groundhog)
+# install.packages("usethis")
+library(usethis)
+# install.packages("tidyverse")
+library(tidyverse)
+# install.packages("here")
+library(here)
+# install.packages("prereg")
+library(prereg)
+# tinytex::install_tinytex()
+
 #### DOWNLOAD DATA ####
 
 ## create directories
@@ -33,11 +47,6 @@ usethis::create_from_github(repo_spec = "https://github.com/kguidonimartins/beta
 system("cp -r /Users/sam/LDP/PROD_REPRO/Beta_div/betadiv-enp/data/* data/github/.")
 
 
-#### MANUSCRIPT ####
 
-## Install and load packages required
-# install.packages("prereg")
-library(prereg)
-# tinytex::install_tinytex()
 
 

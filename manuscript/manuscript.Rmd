@@ -1,7 +1,47 @@
 ---
-title: Impacts of temperature on flowering phenology of tundra plants
-author:
-  - name: Nicola F. Rammell
-    email: nicolarammell@gmail.com
-    affiliation: The University of British Columbia
+## I have commented out the default YAML title and removed the author and data 
+## info as I don't really as I don't want them to appear on the title page
+
+# title: "Generic Manuscript Template"
+
+# This sets up the format to match most journal requirements of 1" margins
+# and 12pt Times new Roman font. The catch is that to specify the font
+# you have to use the xelatex latex_engine. Also important to note, most 
+# journals need Word files (or Latex) for copy editing. You can simply
+# comment out lines (20, 21, 23 and 24) and uncomment the 
+# word_document output. 
+
+geometry: margin=1in
+header-includes:
+    - \usepackage{setspace}
+    - \doublespacing
+    - \usepackage{lineno}
+    - \linenumbers
+#   - \usepackage{fontspec}         # can only be used with xelatex output
+#   - \setmainfont{Times New Roman} # can only be used with xelatex output
+
+# output:
+# pdf_document:
+    latex_engine: xelatex
+## Other output options are:
+# output: pdf_document
+# output: html_document
+ output: word_document
+
+## Specify your csl here. You can use local or remote 
+## sources of csl files but local is better.
+## below are two good sources of CSL files
+## https://github.com/citation-style-language/styles
+## https://www.zotero.org/styles
+
+# csl: https://raw.githubusercontent.com/citation-style-language/styles/master/ecology-letters.csl
+csl: https://www.zotero.org/styles/ecology-letters
+# csl: "ecology-letters.csl"
+
+# The .bib file allows you to add citations without Zotero and to share your
+# library with co-authors so that everyone has the same list of potential
+# references. Co-authors can just add new entries to the .bib file if they think
+# a citation is relevant
+bibliography: references.bib
 ---
+

@@ -20,6 +20,8 @@ library(devtools)
 # install_github('viking/r-yaml')
 # install.packages("rticles")
 library(rticles)
+# install.packages("ggplot2")
+library(ggplot2)
 
 #### DOWNLOAD DATA ####
 
@@ -48,12 +50,9 @@ View(invert.density)
 
 ## download data from github
 
-dir.create("/Users/sam/LDP/PROD_REPRO/Beta_div/")
-usethis::create_from_github(repo_spec = "https://github.com/kguidonimartins/betadiv-enp.git",
-                            destdir="/Users/sam/LDP/PROD_REPRO/Beta_div/")
-system("cp -r /Users/sam/LDP/PROD_REPRO/Beta_div/betadiv-enp/data/* data/github/.")
 
 
+## download data from Dryad
 
 
 

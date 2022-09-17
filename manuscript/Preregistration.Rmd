@@ -9,7 +9,7 @@ author:
 
 affiliation:
   - id          : 1
-    institution : University of British Columbia, Department of Zoology
+    institution : University of British Columbia, Department of Geography
 
 output: prereg::prereg_pdf
 

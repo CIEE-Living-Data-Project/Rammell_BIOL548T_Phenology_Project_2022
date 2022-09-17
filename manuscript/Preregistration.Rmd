@@ -1,0 +1,87 @@
+---
+title           : "Impacts of experimental warming on alpine tundra plant flowering phenology"
+shorttitle      : "Pre-registration"
+date            : "16 September 2022"
+
+author: 
+  - name        : Nicola F. Rammell
+    affiliation : 1
+
+affiliation:
+  - id          : 1
+    institution : University of British Columbia, Department of Zoology
+
+output: prereg::prereg_pdf
+
+bibliography: references.bib
+
+csl: ecology-letters.csl
+---
+
+**STUDY INFORMATION**
+
+**1. Title**
+
+1.1 Impacts of experimental warming on     alpine tundra plant flowering phenology
+
+**2. Authors** 
+
+Nicola F. Rammell
+
+**3. Description**
+
+This study uses data from Carbognani et al., 2018* accessed from Dryad to plot phenological development of three alpine plant species as a function of air temperature. In this study, temperature was manipulated using experimental warming to simulate climate warming of 1-3 degrees C. Data was collected in the Italian Alps during the 2010-2014 growing seasons. An improved understanding of how species will react to warming is imperative in tundra environments where climate warming is driving rapid shifts in vegetation.
+
+*Carbognani, Michele, Marcello Tomaselli, and Alessandro Petraglia. "Different temperature perception in high‐elevation plants: new insight into phenological development and implications for climate change in the alpine tundra." Oikos 127.7 (2018): 1014-1023.
+
+**4. Hypotheses**
+
+4.1 Phenological development will advance with warming, though responses will be species specific.
+
+**DESIGN PLAN**
+
+**5. Study Type**
+
+5.1 Experimental data.
+
+**6. Blinding**
+
+No blinding is involved in this study.
+
+**7. Is there anything blinding in this study**
+
+No.
+
+**Study Design**
+
+This study used a randomized blocked design.
+
+**SAMPLING PLAN**
+
+**10. Existing data**
+
+Registration prior to analysis of data.
+
+**11. Explanation of existing data**
+
+Data were accessed from Dryad (https://datadryad.org/stash). Data were not explored prior to this analysis.
+
+**12. Data collection procedures**
+
+N/A
+
+**13. Sample size**
+
+* *Cardamine alpina* = 687
+* *Leucanthemopsis alpina* = 671
+* *Veronica alpina* = 494
+
+**ANALYSIS PLAN**
+
+I will use a linear model to examine the impact of air temperature on phenological development for three tundra plant species. Data will be plotted by species.
+
+
+
+
+
+

@@ -4,3 +4,11 @@
   # The University of British Columbia
   # 23 September 2022
 
+# Make a subset of the data where phen = 3
+View(phenology.csv)
+phenology <- phenology.csv
+View(phenology)
+
+flower <- phenology[which(phenology$phen=='3')]
+  
+  

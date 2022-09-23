@@ -1,1 +1,2 @@
-This folder will contain the data that I download from different sources: url, github, and dryad
+This data folder contains subdirectories for data downloaded from various sources:
+Dryad, a url, or Github. 

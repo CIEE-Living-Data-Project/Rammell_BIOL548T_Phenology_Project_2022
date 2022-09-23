@@ -45,16 +45,17 @@ library(readr)
 
 ## Note: for this project, I will obtain data by using a link to a .csv file on Dryad. 
 
-# Download data to data/dryad folder
+# Download data to data/dryad folder and import dataset
   # Data downloaded 23 September 2022
 data.url <- "https://datadryad.org/stash/downloads/file_stream/72834" # provide the link
 getwd()                                                               # check working directory
 data.dest.file <-                                                     # specify destination for file
   "/Users/N/Documents/GitHub/BIOL548T/Rammell_BIOL548T_Phenology_Project_2022/data/dryad/phenology.csv"
-download.file(url = data.url, destfile = data.dest.file)              # download the file
-View(phenology.csv)                                                   # View the file
+download.file(url = data.url, destfile = data.dest.file)              # download the file to data/dryad
+phenology <- read_csv("data/dryad/phenology.csv")                     # import dataset
+View(phenology)                                                       # view dataset
 
-# Note: You can also view data directly using the following code
+# Note: You can also view data directly using 
   # phenology <- readr::read_csv("https://datadryad.org/stash/downloads/file_stream/72834")
   # View(phenology)
 

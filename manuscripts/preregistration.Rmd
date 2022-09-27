@@ -30,9 +30,7 @@ Nicola F. Rammell
 
 **3. Description**
 
-This study uses data from Blume‐Werry et al. (2017)** accessed from Dryad to plot flowering phenology of several Arctic plant species as a function of snowmelt timing. In this study, snowmelt was manipulated by removing snow from experimental plots to obtain earlier snowmelt dates. Data was collected during the 2014 growing season in Northern Sweden near the Abisko Scientific Research Station (68°210 N18°450 E). An improved understanding of how species will react to altered snowmelt is imperative in tundra environments where environmental change is driving rapid shifts in vegetation.
-
-** Blume‐Werry, G., Jansson, R., & Milbau, A. (2017). Root phenology unresponsive to earlier snowmelt despite advanced above‐ground phenology in two subarctic plant communities. Functional Ecology, 31(7), 1493-1502.
+This study uses data from @blume-werryRootPhenologyUnresponsive2017 accessed from Dryad to plot flowering phenology of several Arctic plant species as a function of snowmelt timing. In this study, snowmelt was manipulated by removing snow from experimental plots to obtain earlier snowmelt dates. Data was collected during the 2014 growing season in Northern Sweden near the Abisko Scientific Research Station (68°210 N18°450 E). An improved understanding of how species will react to altered snowmelt is imperative in tundra environments where environmental change is driving rapid shifts in vegetation.
 
 **4. Hypotheses**
 
@@ -78,6 +76,8 @@ Observations were collected for 124 individual plants across two treatment group
 
 I will subset data to examine flowering phenology for all Arctic plant species included in the study. Flowering phenology will be plotted as a function of snowmelt date by species. 
 
+\newpage
+**REFERENCES**
 
 
 

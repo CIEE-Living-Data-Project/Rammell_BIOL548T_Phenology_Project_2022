@@ -7,5 +7,5 @@ https://datadryad.org/stash/dataset/doi:10.5061/dryad.21bg6
 The downloaded file is titled "aboveground_phenology.csv" on Dryad and can be
 accessed directly from https://datadryad.org/stash/downloads/file_stream/72834
 
-aboveground_phenology
+METADATA
 'phen' = phenological stage (2=first leaf, 3=first flower)

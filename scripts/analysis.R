@@ -24,12 +24,12 @@ ggplot(flowers, aes(day_difference, doy, colour = factor(species))) +
   theme(axis.title.x = element_text(margin = margin(t = 10, r = 0, b = 0, l = 0))) +
   theme(axis.text.y = element_text(size = 10, hjust = 0.5, vjust = 0.5)) +
   theme(axis.title.y = element_text(margin = margin(t = 0, r = 10, b = 0, l = 0))) +
-  coord_cartesian(ylim = c(120, 200)) +
+  coord_cartesian(ylim = c(140, 190)) +
   theme(legend.position="top") + 
   theme(legend.title = element_text(size = 10, color = "black", face = "bold")) +
   theme(legend.text = element_text(size = 10, face = "italic")) +
-  labs(x="Snowmelt (day difference)", 
-       y = "DOY 1st flower")
+  labs(x="Relative timing of snowmelt (day difference)", 
+       y = "Flowering phenology (DOY)")
 
 
 

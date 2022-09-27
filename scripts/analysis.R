@@ -30,8 +30,3 @@ ggplot(flowers, aes(day_difference, doy, colour = factor(species))) +
   labs(x="Relative timing of snowmelt (day difference)", 
        y = "Flowering phenology (DOY)")
 
-# VIEW PLOT OBJECT
-plot
-
-
-

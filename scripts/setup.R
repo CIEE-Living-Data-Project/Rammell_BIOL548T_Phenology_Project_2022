@@ -44,7 +44,7 @@ library(readr)
 
 #### DOWNLOAD AND VIEW DATA ####
 
-## Note: for this project, I will obtain data by using a link to a .csv file on Dryad. 
+## Note: for this project, I obtain data by using a link to a .csv file on Dryad. 
 
 # Download data to data/dryad folder and import dataset
   # Data downloaded 23 September 2022

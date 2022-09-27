@@ -12,11 +12,10 @@
 View(phenology)
 flowers <- subset(phenology, phen=='3')
 
-
-# CREATE THE PLOT
+# CREATE PLOT
+library(ggplot2)
 names(flowers)
 
-library(ggplot2)
 ggplot(flowers, aes(day_difference, doy, colour = factor(species))) +
   geom_point() + theme_classic() +
   theme(text = element_text(size = 10)) +
@@ -31,6 +30,8 @@ ggplot(flowers, aes(day_difference, doy, colour = factor(species))) +
   labs(x="Relative timing of snowmelt (day difference)", 
        y = "Flowering phenology (DOY)")
 
+# VIEW PLOT OBJECT
+plot
 
 
 

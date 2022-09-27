@@ -1,5 +1,5 @@
 ---
-title: "Effects of altered snowmelt timing on flowering phenology of Arctic plants"
+title: "Effects of altered snowmelt timing on flowering phenology of Arctic plant species"
 author: "Nicola F. Rammell"
 email: "rammell@student.ubc.ca"
 affiliation: "Deparment of Geography, The University of British Columbia"

@@ -8,11 +8,12 @@
 
 #### SET UP DIRECTORIES ####
 
-# dir.create("data/")
-    # dir.create("data/dryad")
-    # dir.create("data/url")
-    # dir.create("data/github")
-# dir.create("scripts/")
+dir.create("data/")
+    dir.create("data/dryad")
+    dir.create("data/url")
+    dir.create("data/github")
+dir.create("scripts/")
+dir.create("manuscripts")
 
 #### INSTALL AND LOAD PACKAGES ####
 

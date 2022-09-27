@@ -41,6 +41,8 @@ library(rticles)
 library(ggplot2)
 # install.packages("readr")
 library(readr)
+# install.packages("distill")
+library(distill)
 
 #### DOWNLOAD AND VIEW DATA ####
 

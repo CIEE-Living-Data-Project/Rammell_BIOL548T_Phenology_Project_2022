@@ -1,37 +1,40 @@
 ---
-title: "Effects of altered snowmelt timing on flowering phenology of Arctic plant species"
-author: "Nicola F. Rammell"
-email: "rammell@student.ubc.ca"
-affiliation: "Deparment of Geography, The University of British Columbia"
+title: "**Effects of altered snowmelt timing on flowering phenology of Arctic plant species**"
+author: 
+- "**Nicola F. Rammell**   *Department of Geography, The University of British Columbia*" 
+- "Email: rammell@student.ubc.ca"
 output: pdf_document
-date: "2022-09-23"
+    
+date: "23 September 2022"
 bibliography: ["Rammell_BIOL548T_Phenology_Project_2022.bib"]
 csl: ecology-letters.csl
-# csl: "https://raw.githubusercontent.com/citation-style-language/styles/master/ecology-letters.csl" # Note: This is another option for accessing the ecology letters csl when online
+# csl: "https://raw.githubusercontent.com/citation-style-language/styles/master/ecology-letters.csl" # Note: This is another option for accessing the ecology letters csl when online.
 ---
 
 ```{r global_options, include=FALSE}
 knitr::opts_chunk$set(fig.pos = 'H')
 ```
 
-# Abstract
+# ABSTRACT
 
-Climate warming is driving rapid shifts in tundra vegetation.
+Climate change is driving rapid shifts in tundra vegetation. In Arctic regions, the climate is warming at more than twice the global average rate and patterns of precipitation have also been altered. This has major implications for the timing of phenophases of Arctic tundra plant species. Due to earlier snowmelt in many Arctic regions, flowering phenology may be advancing.
 
-*Keywords*: phenology, climate change, artic, tundra, plant ecology
+*Keywords*: phenology, climate change, Artic, tundra, plant ecology
 
-# Introduction
+# INTRODUCTION
 
-Climate warming is driving rapid shifts in tundra vegetation [@arftResponsesTundraPlants1999]. This study uses data from Blume-Werry et al. (2017), accessed from Dryad, to plot flowering phenology of several Arctic plant species in Northern Sweden [@blume-werryRootPhenologyUnresponsive2017]. In this study, snowmelt timing was manipulated by manually removing snow from experimental plots. Flowering phenology was recorded throughout the growing season. An improved understanding of how species will react to warming is imperative in tundra environments where climate warming is driving rapid shifts in vegetation.
+Climate warming is driving rapid shifts in tundra vegetation [@arftResponsesTundraPlants1999]. In particular, flowering phenology has been influenced [@collinsExperimentalWarmingDifferentially2021], especially at colder, high latitude sites  [@preveyGreaterTemperatureSensitivity2017]. This study uses data from Blume-Werry et al. (2017), accessed from Dryad, to plot flowering phenology of several Arctic plant species in Northern Sweden [@blume-werryRootPhenologyUnresponsive2017]. An improved understanding of how species will react to altered snowmelt is imperative in tundra environments where environmental change is driving rapid shifts in vegetation.
 
-# Methods
+# METHODS
 
-Researchers collected data on three different plant species from 2005-2007 in the Italian Alps. Air temperature was manipulated experimentally and phenophases were recorded for *Cardamine alpina*, *Leucanthemopsis alpina*, and *Veronica alpina* throughout the growing seasons. In this paper, I plot the data by species.
+In this study, snowmelt timing was manipulated by manually removing snow from experimental plots. Data was collected during the 2014 growing season in Northern Sweden near the Abisko Scientific Research Station (68°210 N18°450 E). This study was conducted in two contrasting heath and meadow plant communities. Researchers collected phenology data on 124 individual plants of several Arctic species across two treatment groups within 28 paired plots. For each individual plant, flowering phenology was recorded as the DOY (day of year) of the first mature flower and leaf phenology was recorded as the dDOY of the first mature leaf. In this paper, I subset the data to examine the flowering phenology, plotted as a function of snowmelt timing by species. For the purposes of this reproducible project, exploratory data analysis includes a simple plot.
 
 \newpage
-# Results
+# RESULTS
 
-The phenological development of *Cardamine alpina*, *Leucanthemopsis alpina*, and *Veronica alpina* all increased with temperature (Fig. 1).
+The flowering phenology was tightly coupled with snowmelt timing. All species showed a similar advancement in flowering phenology in response to earlier snowmelt (Fig. 1).
+\newline
+
 
 ```{r echo=FALSE, fig.height=6, fig.width=11.5}
 
@@ -42,10 +45,10 @@ flowers.data <- subset(plant.data, phen=='3')
 library(ggplot2)
 ggplot(flowers.data, aes(day_difference, doy, colour = factor(species))) +
   geom_point() + theme_classic() +
-  theme(text = element_text(size = 16)) +
-  theme(axis.text.x = element_text(size = 15, hjust = 0.5, vjust = 0.5)) +
+  theme(text = element_text(size = 17)) +
+  theme(axis.text.x = element_text(size = 16, hjust = 0.5, vjust = 0.5)) +
   theme(axis.title.x = element_text(margin = margin(t = 10, r = 0, b = 0, l = 0))) +
-  theme(axis.text.y = element_text(size = 15, hjust = 0.5, vjust = 0.5)) +
+  theme(axis.text.y = element_text(size = 16, hjust = 0.5, vjust = 0.5)) +
   theme(axis.title.y = element_text(margin = margin(t = 0, r = 10, b = 0, l = 0))) +
   coord_cartesian(ylim = c(140, 190)) +
   theme(legend.position="top") + 
@@ -60,23 +63,26 @@ ggplot(flowers.data, aes(day_difference, doy, colour = factor(species))) +
 
 ```
 
-**Figure 1.** Phenological development as a function of temperature for three alpine species, Cardamine alpina, Leucanthemopsis alpina, and Veronica alpina.
+**Figure 1.** Flowering phenology as a function of snowmelt timing for 23 Arctic tundra species. Flowering phenology for each individual plant was recorded as the DOY (day of year) when the first mature flower was observed. Raw data are plotted.
 
-# Discussion
+# DISCUSSION
 
-Species specific responses.
+Flowering phenology advanced with snowmelt date for all species observed in this study. This suggests that the timing of plant development is tightly coupled with the timing of snowmelt across the Arctic tundra. Unlike the phenological responses to climate warming, which are often species- or community-specific [@carbognaniDifferentTemperaturePerception2018], this study shows that the flowering responses to snowmelt were strikingly similar for all species studied across two community types. 
 
-# Conclusions
+# CONCLUSION
 
-This is important for reasons.
+Snowmelt strongly influences the timing of plant development. Since climate change is altering season patterns of winter snow accumulation and spring temperature which affect snowmelt [@freiLongtermEffectsSnowmelt2021], the timing of life events for tundra species is expected to be altered. 
 
-# Acknowledgements
+# ACKNOWLEDGEMENTS
 
-CIEE team.
+Thank you to the CIEE team for their guidance in creating a fully reproducible research project.
 
-\newpage
-# References
+# DATA AVAILABILITY STATEMENT
 
+Data and reproducible code are freely available on GitHub at <https://github.com/CIEE-Living-Data-Project/Rammell_BIOL548T_Phenology_Project_2022>
 
+# ORCID
 
+Nicola F. Rammell (ID) <https://orcid.org/0000-0002-3536-298X>
 
+# REFERENCES

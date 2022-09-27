@@ -13,7 +13,7 @@ affiliation:
 
 output: prereg::prereg_pdf
 
-bibliography: references.bib
+bibliography: ["Rammell_BIOL548T_Phenology_Project_2022.bib"]
 
 csl: ecology-letters.csl
 ---

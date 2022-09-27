@@ -54,7 +54,7 @@ ggplot(flowers.data, aes(day_difference, doy, colour = factor(species))) +
   theme(legend.position="top") + 
   theme(legend.title = element_text(size = 0, color = "black", face = "bold")) +
   theme(legend.text = element_text(size = 12, face = "italic")) +
-  labs(x="Relative timing of snowmelt (day difference)", 
+  labs(x="Relative timing of snowmelt (days)", 
        y = "Flowering phenology (DOY)") 
 
 

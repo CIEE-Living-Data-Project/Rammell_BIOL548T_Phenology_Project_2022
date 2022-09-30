@@ -27,7 +27,7 @@ Climate warming is driving rapid shifts in tundra vegetation [@arftResponsesTund
 
 # METHODS
 
-In this study, snowmelt timing was manipulated by manually removing snow from experimental plots. Data was collected during the 2014 growing season in Northern Sweden near the Abisko Scientific Research Station (68°210 N18°450 E). This study was conducted in two contrasting heath and meadow plant communities. Researchers collected phenology data on 124 individual plants of several Arctic species across two treatment groups within 28 paired plots. For each individual plant, flowering phenology was recorded as the DOY (day of year) of the first mature flower and leaf phenology was recorded as the dDOY of the first mature leaf. In this paper, I subset the data to examine the flowering phenology, plotted as a function of snowmelt timing by species. For the purposes of this reproducible project, exploratory data analysis includes a simple plot.
+In this study, snowmelt timing was manipulated by manually removing snow from experimental plots. Data was collected during the 2014 growing season in Northern Sweden near the Abisko Scientific Research Station (68°210 N18°450 E). This study was conducted in two contrasting heath and meadow plant communities. Researchers collected phenology data on 124 individual plants of several Arctic species across two treatment groups within 28 paired plots. For each individual plant, flowering phenology was recorded as the DOY (day of year) of the first mature flower and leaf phenology was recorded as the DOY of the first mature leaf. In this paper, I subset the data to examine the flowering phenology, plotted as a function of snowmelt timing by species. For the purposes of this reproducible project, exploratory data analysis includes a simple plot.
 
 \newpage
 # RESULTS
@@ -35,15 +35,16 @@ In this study, snowmelt timing was manipulated by manually removing snow from ex
 The flowering phenology was tightly coupled with snowmelt timing. All species showed a similar advancement in flowering phenology in response to earlier snowmelt (Fig. 1).
 \newline
 
-
 ```{r echo=FALSE, fig.height=6, fig.width=11.5}
 
-plant.data <- read.csv("/Users/N/Documents/GitHub/BIOL548T/Rammell_BIOL548T_Phenology_Project_2022/data/dryad/phenology.csv", header = TRUE)
-
-flowers.data <- subset(plant.data, phen=='3')
+## Access the data directly from the DRYAD link! (updated 29 September 2022)
+library(readr)
+phenology.data <- readr::read_csv("https://datadryad.org/stash/downloads/file_stream/72834", show_col_types = FALSE)
+## Subset the data
+flower.data <- subset(phenology.data, phen=='3')
 
 library(ggplot2)
-ggplot(flowers.data, aes(day_difference, doy, colour = factor(species))) +
+ggplot(flower.data, aes(day_difference, doy, colour = factor(species))) +
   geom_point() + theme_classic() +
   theme(text = element_text(size = 17)) +
   theme(axis.text.x = element_text(size = 16, hjust = 0.5, vjust = 0.5)) +
@@ -56,9 +57,6 @@ ggplot(flowers.data, aes(day_difference, doy, colour = factor(species))) +
   theme(legend.text = element_text(size = 12, face = "italic")) +
   labs(x="Relative timing of snowmelt (days)", 
        y = "Flowering phenology (DOY)") 
-
-
-
 
 
 ```

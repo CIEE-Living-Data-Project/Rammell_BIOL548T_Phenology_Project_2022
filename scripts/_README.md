@@ -5,5 +5,6 @@ This script folder contains two scripts:
   
   (2) "analysis.R" which contains the code used to create the figure used in the manuscript.
   
-To reproduce this project, begin by running the "setup.R" script to download data followed by the "analysis.R"
-script. 
+To reproduce this project, begin by running the "setup.R" script to install packages 
+(note the installation code is currently commented out), set up directories, and 
+download data followed by the "analysis.R" script to view the figure. 

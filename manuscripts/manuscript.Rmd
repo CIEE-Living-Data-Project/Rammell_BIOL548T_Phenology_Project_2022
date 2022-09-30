@@ -35,15 +35,14 @@ In this study, snowmelt timing was manipulated by manually removing snow from ex
 The flowering phenology was tightly coupled with snowmelt timing. All species showed a similar advancement in flowering phenology in response to earlier snowmelt (Fig. 1).
 \newline
 
-
 ```{r echo=FALSE, fig.height=6, fig.width=11.5}
 
-plant.data <- read.csv("/Users/N/Documents/GitHub/BIOL548T/Rammell_BIOL548T_Phenology_Project_2022/data/dryad/phenology.csv", header = TRUE)
-
-flowers.data <- subset(plant.data, phen=='3')
+## Access the data directly from the DRYAD link! (updated 29 September 2022)
+phenology.data <- readr::read_csv("https://datadryad.org/stash/downloads/file_stream/72834")
+flower.data <- subset(phenology.data, phen=='3')
 
 library(ggplot2)
-ggplot(flowers.data, aes(day_difference, doy, colour = factor(species))) +
+ggplot(flower.data, aes(day_difference, doy, colour = factor(species))) +
   geom_point() + theme_classic() +
   theme(text = element_text(size = 17)) +
   theme(axis.text.x = element_text(size = 16, hjust = 0.5, vjust = 0.5)) +
@@ -56,9 +55,6 @@ ggplot(flowers.data, aes(day_difference, doy, colour = factor(species))) +
   theme(legend.text = element_text(size = 12, face = "italic")) +
   labs(x="Relative timing of snowmelt (days)", 
        y = "Flowering phenology (DOY)") 
-
-
-
 
 
 ```

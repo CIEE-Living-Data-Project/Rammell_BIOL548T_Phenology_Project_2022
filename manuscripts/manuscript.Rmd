@@ -39,7 +39,7 @@ The flowering phenology was tightly coupled with snowmelt timing. All species sh
 
 ## Access the data directly from the DRYAD link! (updated 29 September 2022)
 library(readr)
-phenology.data <- readr::read_csv("https://datadryad.org/stash/downloads/file_stream/72834")
+phenology.data <- readr::read_csv("https://datadryad.org/stash/downloads/file_stream/72834", show_col_types = FALSE)
 ## Subset the data
 flower.data <- subset(phenology.data, phen=='3')
 
